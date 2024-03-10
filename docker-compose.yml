@@ -10,6 +10,8 @@ services:
     volumes:
       - .:/app
       - /app/node_modules
+    environment:
+      - DB_URL=${DB_URL}
 
   db:
     image: postgres:16.2-alpine3.19
@@ -18,7 +20,9 @@ services:
     volumes:
       - db-data:/var/lib/postgresql/data
     environment:
-      - DB_URL=${DB_URL}
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - POSTGRES_DB=${DB_NAME}
 
 volumes:
   db-data:
