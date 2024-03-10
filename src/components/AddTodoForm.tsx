@@ -33,7 +33,7 @@ placeholder:select-none focus:outline-none'
       />
       <button
         type='submit'
-        className='inline-flex size-8 cursor-default items-center
+        className='inline-flex size-8 shrink-0 cursor-default items-center
 justify-center rounded-lg bg-foreground/10 enabled:hover:bg-foreground/15
 enabled:active:bg-foreground/25 disabled:opacity-50'
         disabled={value.length < 1}

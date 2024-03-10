@@ -31,7 +31,7 @@ export const TodoListItem = ({
         id={`checkbox-todo-${id}`}
         checked={checked}
         onChange={e => updateTodoChecked(id, e.target.checked)}
-        className='size-5 accent-foreground'
+        className='size-5 shrink-0 accent-foreground'
       />
       <input
         id={`input-todo-${id}-text`}
@@ -43,7 +43,7 @@ export const TodoListItem = ({
       <button
         id={`button-todo-${id}-delete`}
         onClick={() => deleteTodo(id)}
-        className='inline-flex size-8 cursor-default items-center
+        className='inline-flex size-8 shrink-0 cursor-default items-center
 justify-center rounded-lg bg-foreground/10 hover:bg-foreground/15
 active:bg-foreground/25'
       >

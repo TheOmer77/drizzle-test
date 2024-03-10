@@ -29,6 +29,6 @@
 }
 
 body {
-  @apply flex min-h-dvh flex-col items-center justify-center bg-background
+  @apply flex min-h-dvh flex-col items-center justify-center bg-background p-4
 text-foreground;
 }
